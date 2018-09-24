@@ -57,18 +57,18 @@ function createTab(title, message, icon) {
 
     var btn = Ti.UI.createButton({
         top:20,
-        width:100,
-        title: 'start timeout'
+        width:200,
+        title: 'start 5sec timeout'
     });
 
-    var timeoutTimer;
+    var timeoutTimer = null;
     btn.addEventListener('click', function(e){
-
+        console.log('START 5 secs timeout');
         timeoutTimer = timely.createTimer();
         timeoutTimer.setTimeout(function(){
             console.log('TIMEOUT DONE');
             timeoutTimer = null;
-        }, 5000);
+        }, 5000, true);
 
     });
 
@@ -76,13 +76,13 @@ function createTab(title, message, icon) {
 
     var btn2 = Ti.UI.createButton({
         top:20,
-        width:100,
-        title: 'start interval'
+        width:200,
+        title: 'start interval tests'
     });
 
 
-    var intervaltimer;
-    var intervaltimeout;
+    var intervaltimer = null;
+    var intervaltimeout = null;
     btn2.addEventListener('click', function(e){
 
         counter = 0;
@@ -112,20 +112,25 @@ function createTab(title, message, icon) {
 
     var btn3 = Ti.UI.createButton({
         top:20,
-        width:100,
-        title: 'clear interval'
+        width:200,
+        title: 'stop all'
     });
 
     btn3.addEventListener('click', function(e){
 
-        console.log('stopping timers');
+        console.log('stopping');
         if(intervaltimer!==null){
             intervaltimer.clearInterval();
         }
         if(intervaltimeout!==null){
             intervaltimeout.clearTimeout();
         }
+
+        if(timeoutTimer!==null){
+            timeoutTimer.clearTimeout();
+        }
                 
+        timeoutTimer = null;
         intervaltimer = null;
         intervaltimeout = null;
 
