@@ -18,7 +18,7 @@ namespace mely {
 class TimerProxy : public titanium::Proxy
 {
 public:
-	explicit TimerProxy(jobject javaObject);
+	explicit TimerProxy();
 
 	static void bindProxy(v8::Local<v8::Object>, v8::Local<v8::Context>);
 	static v8::Local<v8::FunctionTemplate> getProxyTemplate(v8::Isolate*);
@@ -30,8 +30,8 @@ private:
 	static v8::Persistent<v8::FunctionTemplate> proxyTemplate;
 
 	// Methods -----------------------------------------------------------
-	static void start(const v8::FunctionCallbackInfo<v8::Value>&);
 	static void stop(const v8::FunctionCallbackInfo<v8::Value>&);
+	static void start(const v8::FunctionCallbackInfo<v8::Value>&);
 
 	// Dynamic property accessors ----------------------------------------
 

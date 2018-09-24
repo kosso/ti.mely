@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2011-2016 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2011-2017 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  */
@@ -10,17 +10,13 @@
 #include "ti.mely.TimelyModule.h"
 
 #include "AndroidUtil.h"
-#include "EventEmitter.h"
 #include "JNIUtil.h"
 #include "JSException.h"
-#include "Proxy.h"
-#include "ProxyFactory.h"
 #include "TypeConverter.h"
 #include "V8Util.h"
 
 
 
-#include "ti.mely.ExampleProxy.h"
 #include "ti.mely.TimerProxy.h"
 
 #include "org.appcelerator.kroll.KrollModule.h"
@@ -36,7 +32,7 @@ namespace mely {
 Persistent<FunctionTemplate> TimelyModule::proxyTemplate;
 jclass TimelyModule::javaClass = NULL;
 
-TimelyModule::TimelyModule(jobject javaObject) : titanium::Proxy(javaObject)
+TimelyModule::TimelyModule() : titanium::Proxy()
 {
 }
 
@@ -45,9 +41,22 @@ void TimelyModule::bindProxy(Local<Object> exports, Local<Context> context)
 	Isolate* isolate = context->GetIsolate();
 
 	Local<FunctionTemplate> pt = getProxyTemplate(isolate);
-	Local<Function> proxyConstructor = pt->GetFunction(context).ToLocalChecked();
+
+	v8::TryCatch tryCatch(isolate);
+	Local<Function> constructor;
+	MaybeLocal<Function> maybeConstructor = pt->GetFunction(context);
+	if (!maybeConstructor.ToLocal(&constructor)) {
+		titanium::V8Util::fatalException(isolate, tryCatch);
+		return;
+	}
+
 	Local<String> nameSymbol = NEW_SYMBOL(isolate, "Timely"); // use symbol over string for efficiency
-	Local<Object> moduleInstance = proxyConstructor->NewInstance(context).ToLocalChecked();
+	MaybeLocal<Object> maybeInstance = constructor->NewInstance(context);
+	Local<Object> moduleInstance;
+	if (!maybeInstance.ToLocal(&moduleInstance)) {
+		titanium::V8Util::fatalException(isolate, tryCatch);
+		return;
+	}
 	exports->Set(nameSymbol, moduleInstance);
 }
 
@@ -67,7 +76,7 @@ Local<FunctionTemplate> TimelyModule::getProxyTemplate(Isolate* isolate)
 		return proxyTemplate.Get(isolate);
 	}
 
-	LOGD(TAG, "GetProxyTemplate");
+	LOGD(TAG, "TimelyModule::getProxyTemplate()");
 
 	javaClass = titanium::JNIUtil::findClass("ti/mely/TimelyModule");
 	EscapableHandleScope scope(isolate);
@@ -81,9 +90,7 @@ Local<FunctionTemplate> TimelyModule::getProxyTemplate(Isolate* isolate)
 
 	proxyTemplate.Reset(isolate, t);
 	t->Set(titanium::Proxy::inheritSymbol.Get(isolate),
-		FunctionTemplate::New(isolate, titanium::Proxy::inherit<TimelyModule>)->GetFunction());
-
-	titanium::ProxyFactory::registerProxyPair(javaClass, *t);
+		FunctionTemplate::New(isolate, titanium::Proxy::inherit<TimelyModule>));
 
 	// Method bindings --------------------------------------------------------
 

@@ -16,9 +16,10 @@
     BOOL isInDebug;
     float providedInterval;
     long counter;
+    dispatch_queue_t privateQueue;
 }
 
 @property (strong, nonatomic) MSWeakTimer *timer;
-@property (assign, nonatomic) dispatch_queue_t privateQueue;
+//@property (assign, nonatomic) dispatch_queue_t privateQueue;
 
 @end

@@ -18,7 +18,7 @@
 {
     if ((self = [super init]))
     {
-        self.privateQueue = dispatch_queue_create("com.bencoding.timer.private_queue", DISPATCH_QUEUE_CONCURRENT);
+        self->privateQueue = dispatch_queue_create("timely.private_queue", DISPATCH_QUEUE_CONCURRENT);
         isRunning = NO;
         providedInterval = 1000;
         counter = 0;
@@ -62,7 +62,7 @@
                                                     selector:@selector(mainThreadTimerDidFire:)
                                                     userInfo:nil
                                                      repeats:YES
-                                               dispatchQueue:self.privateQueue];
+                                               dispatchQueue:self->privateQueue];
     
     isRunning = YES;
 }

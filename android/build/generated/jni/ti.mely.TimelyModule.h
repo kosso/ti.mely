@@ -17,7 +17,7 @@ namespace mely {
 class TimelyModule : public titanium::Proxy
 {
 public:
-	explicit TimelyModule(jobject javaObject);
+	explicit TimelyModule();
 
 	static void bindProxy(v8::Local<v8::Object>, v8::Local<v8::Context>);
 	static v8::Local<v8::FunctionTemplate> getProxyTemplate(v8::Isolate*);

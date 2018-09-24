@@ -50,10 +50,10 @@ static void Timely_getBinding(const FunctionCallbackInfo<Value>& args)
 		return;
 	}
 
-	titanium::Utf8Value bindingValue(binding);
+	v8::String::Utf8Value bindingValue(binding);
 	LOGD(TAG, "Looking up binding: %s", *bindingValue);
 
-	titanium::bindings::BindEntry *extBinding = ::TimelyBindings::lookupGeneratedInit(
+	titanium::bindings::BindEntry *extBinding = titanium::bindings::TimelyBindings::lookupGeneratedInit(
 		*bindingValue, bindingValue.length());
 
 	if (!extBinding) {
@@ -82,6 +82,7 @@ static void Timely_init(Local<Object> exports, Local<Context> context)
 
 		exports->Set(name, source);
 	}
+
 	Local<FunctionTemplate> constructor = FunctionTemplate::New(isolate, Timely_getBinding);
 	exports->Set(String::NewFromUtf8(isolate, "getBinding"), constructor->GetFunction(context).ToLocalChecked());
 }
@@ -97,11 +98,11 @@ static void Timely_dispose(Isolate* isolate)
 	uint32_t length = propertyNames->Length();
 
 	for (uint32_t i = 0; i < length; ++i) {
-		titanium::Utf8Value binding(propertyNames->Get(i));
+		v8::String::Utf8Value binding(propertyNames->Get(i));
 		int bindingLength = binding.length();
 
 		titanium::bindings::BindEntry *extBinding =
-			::TimelyBindings::lookupGeneratedInit(*binding, bindingLength);
+			titanium::bindings::TimelyBindings::lookupGeneratedInit(*binding, bindingLength);
 
 		if (extBinding && extBinding->dispose) {
 			extBinding->dispose(isolate);
@@ -123,5 +124,5 @@ Java_ti_mely_TimelyBootstrap_nativeBootstrap
 	(JNIEnv *env, jobject self)
 {
 	titanium::KrollBindings::addExternalBinding("ti.mely", &TimelyBinding);
-	titanium::KrollBindings::addExternalLookup(&(::TimelyBindings::lookupGeneratedInit));
+	titanium::KrollBindings::addExternalLookup(&(titanium::bindings::TimelyBindings::lookupGeneratedInit));
 }

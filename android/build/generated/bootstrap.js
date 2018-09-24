@@ -24,36 +24,23 @@ function moduleBootstrap(moduleBinding) {
 		invocationAPIs.push({ namespace: namespace, api: api });
 	}
 
-		addInvocationAPI(module, "Timely", "Timely", "createExample");
 	addInvocationAPI(module, "Timely", "Timely", "createTimer");
+		if (!("__propertiesDefined__" in module)) {Object.defineProperties(module, {
+"Timer": {
+get: function() {
+var Timer =  lazyGet(this, "ti.mely.TimerProxy", "Timer", "Timer");
+return Timer;
+},
+configurable: true
+},
 
-			if (!("__propertiesDefined__" in module)) {		
-		Object.defineProperties(module, {
-			"Timer": {
-				get: function() {
-					var Timer = lazyGet(this, "ti.mely.TimerProxy", "Timer", "Timer");
-					return Timer;
-				},
-				configurable: true
-			},
-			"Example": {
-				get: function() {
-					var Example = lazyGet(this, "ti.mely.ExampleProxy", "Example", "Example");
-					return Example;
-				},
-				configurable: true
-			},
-		
-		});
-		module.constructor.prototype.createExample = function() {
-			return new module.Example(arguments);
-		}
-		module.constructor.prototype.createTimer = function() {
-			return new module.Timer(arguments);
-		}
-		}
-		module.__propertiesDefined__ = true;
-		return module;
+});
+module.constructor.prototype.createTimer = function() {
+return new module["Timer"](arguments);
+}
+}
+module.__propertiesDefined__ = true;
+return module;
 
 }
 exports.bootstrap = moduleBootstrap;

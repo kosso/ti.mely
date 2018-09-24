@@ -1,280 +1,190 @@
-/var/folders/ys/7jcl3zw972nbpmgd2ghkx09h0000gn/T//bencoding/timely-generated/obj/local/x86/objs/ti.mely/__/TimelyBootstrap.o: \
- jni/../TimelyBootstrap.cpp \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/jni.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/sys/cdefs.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/sys/cdefs_elf.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/android/api-level.h \
- /Users/bencoding/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/android/native/include/v8.h \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/stdint.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/stdint.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/sys/_types.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/machine/_types.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/limits.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/sys/limits.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/linux/limits.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/machine/internal_types.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/machine/limits.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/sys/syslimits.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/asm/page.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/asm/page_32.h \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/stdio.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/stdio.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/sys/types.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/linux/posix_types.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/linux/stddef.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/linux/compiler.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/asm/posix_types.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/asm/posix_types_32.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/asm/types.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/linux/types.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/machine/kernel.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/sys/sysmacros.h \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/wchar.h \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/wctype.h \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/xlocale.h \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/utility \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/__config \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/__tuple \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cstddef \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/type_traits \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/vector \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/__bit_reference \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/algorithm \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/initializer_list \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cstring \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/string.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/string.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/malloc.h \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/memory \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/typeinfo \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/exception \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cstdint \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/new \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/limits \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/iterator \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/__functional_base \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/iosfwd \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/tuple \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cassert \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/assert.h \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/atomic \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/climits \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/stdexcept \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/__split_buffer \
- /Users/bencoding/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/android/native/include/v8-version.h \
- /Users/bencoding/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/android/native/include/v8config.h \
- /Users/bencoding/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/android/native/include/AndroidUtil.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/android/log.h \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/stdlib.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/stdlib.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/alloca.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/strings.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/memory.h \
- /Users/bencoding/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/android/native/include/JNIUtil.h \
- /Users/bencoding/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/android/native/include/AndroidUtil.h \
- /Users/bencoding/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/android/native/include/JSException.h \
- /Users/bencoding/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/android/native/include/KrollBindings.h \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/map \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/__tree \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/functional \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/string \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cstdio \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cwchar \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cwctype \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cctype \
- /Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/ctype.h \
- /Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/ctype.h \
- /Users/bencoding/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/android/native/include/V8Util.h \
- jni/../BootstrapJS.cpp jni/../KrollGeneratedBindings.cpp \
- jni/ti.mely.TimelyModule.h \
- /Users/bencoding/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/android/native/include/Proxy.h \
- /Users/bencoding/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/android/native/include/JavaObject.h \
- /Users/bencoding/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/android/native/include/EventEmitter.h \
- /Users/bencoding/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/android/native/include/NativeObject.h \
- jni/ti.mely.TimerProxy.h
+/Users/kosso/_GITHUB/ti.mely/android/build/generated/obj/local/x86/objs/ti.mely/__/TimelyBootstrap.o: \
+  jni/../TimelyBootstrap.cpp \
+  /Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/android/native/include/v8.h \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/stddef.h \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/stdio.h \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/memory \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/type_traits \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/cstddef \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/typeinfo \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/exception \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/cstdlib \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/stdlib.h \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/cstdint \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/new \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/utility \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/__tuple \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/initializer_list \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/cstring \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/string.h \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/__debug \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/limits \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/iterator \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/iosfwd \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/wchar.h \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/__functional_base \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/tuple \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/stdexcept \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/cassert \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/atomic \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/vector \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/__bit_reference \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/algorithm \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/climits \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/__split_buffer \
+  /Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/android/native/include/v8-version.h \
+  /Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/android/native/include/v8config.h \
+  /Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/android/native/include/AndroidUtil.h \
+  /Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/android/native/include/JNIUtil.h \
+  /Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/android/native/include/JSException.h \
+  /Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/android/native/include/KrollBindings.h \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/map \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/__tree \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/functional \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/string \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/string_view \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/__string \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/cstdio \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/cwchar \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/cwctype \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/cctype \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/ctype.h \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/wctype.h \
+  /Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/android/native/include/V8Util.h \
+  jni/../BootstrapJS.cpp jni/../KrollGeneratedBindings.cpp \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/unordered_map \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/__hash_table \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/cmath \
+  /opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/math.h \
+  jni/ti.mely.TimelyModule.h \
+  /Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/android/native/include/Proxy.h \
+  /Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/android/native/include/JavaObject.h \
+  /Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/android/native/include/EventEmitter.h \
+  /Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/android/native/include/NativeObject.h \
+  jni/ti.mely.TimerProxy.h
 
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/jni.h:
+/Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/android/native/include/v8.h:
 
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/sys/cdefs.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/stddef.h:
 
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/sys/cdefs_elf.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/stdio.h:
 
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/android/api-level.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/memory:
 
-/Users/bencoding/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/android/native/include/v8.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/type_traits:
 
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/stdint.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/cstddef:
 
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/stdint.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/typeinfo:
 
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/sys/_types.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/exception:
 
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/machine/_types.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/cstdlib:
 
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/limits.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/stdlib.h:
 
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/sys/limits.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/cstdint:
 
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/linux/limits.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/new:
 
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/machine/internal_types.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/utility:
 
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/machine/limits.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/__tuple:
 
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/sys/syslimits.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/initializer_list:
 
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/asm/page.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/cstring:
 
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/asm/page_32.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/string.h:
 
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/stdio.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/__debug:
 
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/stdio.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/limits:
 
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/sys/types.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/iterator:
 
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/linux/posix_types.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/iosfwd:
 
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/linux/stddef.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/wchar.h:
 
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/linux/compiler.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/__functional_base:
 
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/asm/posix_types.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/tuple:
 
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/asm/posix_types_32.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/stdexcept:
 
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/asm/types.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/cassert:
 
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/linux/types.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/atomic:
 
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/machine/kernel.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/vector:
 
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/sys/sysmacros.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/__bit_reference:
 
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/wchar.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/algorithm:
 
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/wctype.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/climits:
 
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/xlocale.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/__split_buffer:
 
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/utility:
+/Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/android/native/include/v8-version.h:
 
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/__config:
+/Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/android/native/include/v8config.h:
 
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/__tuple:
+/Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/android/native/include/AndroidUtil.h:
 
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cstddef:
+/Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/android/native/include/JNIUtil.h:
 
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/type_traits:
+/Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/android/native/include/JSException.h:
 
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/vector:
+/Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/android/native/include/KrollBindings.h:
 
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/__bit_reference:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/map:
 
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/algorithm:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/__tree:
 
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/initializer_list:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/functional:
 
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cstring:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/string:
 
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/string.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/string_view:
 
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/string.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/__string:
 
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/malloc.h:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/cstdio:
 
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/memory:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/cwchar:
 
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/typeinfo:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/cwctype:
 
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/exception:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/cctype:
 
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cstdint:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/ctype.h:
 
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/new:
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/wctype.h:
 
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/limits:
-
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/iterator:
-
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/__functional_base:
-
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/iosfwd:
-
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/tuple:
-
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cassert:
-
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/assert.h:
-
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/atomic:
-
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/climits:
-
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/stdexcept:
-
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/__split_buffer:
-
-/Users/bencoding/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/android/native/include/v8-version.h:
-
-/Users/bencoding/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/android/native/include/v8config.h:
-
-/Users/bencoding/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/android/native/include/AndroidUtil.h:
-
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/android/log.h:
-
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/stdlib.h:
-
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/stdlib.h:
-
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/alloca.h:
-
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/strings.h:
-
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/memory.h:
-
-/Users/bencoding/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/android/native/include/JNIUtil.h:
-
-/Users/bencoding/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/android/native/include/AndroidUtil.h:
-
-/Users/bencoding/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/android/native/include/JSException.h:
-
-/Users/bencoding/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/android/native/include/KrollBindings.h:
-
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/map:
-
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/__tree:
-
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/functional:
-
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/string:
-
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cstdio:
-
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cwchar:
-
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cwctype:
-
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cctype:
-
-/Users/bencoding/Android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/ctype.h:
-
-/Users/bencoding/Android/ndk/platforms/android-9/arch-x86/usr/include/ctype.h:
-
-/Users/bencoding/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/android/native/include/V8Util.h:
+/Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/android/native/include/V8Util.h:
 
 jni/../BootstrapJS.cpp:
 
 jni/../KrollGeneratedBindings.cpp:
 
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/unordered_map:
+
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/__hash_table:
+
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/cmath:
+
+/opt/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include/math.h:
+
 jni/ti.mely.TimelyModule.h:
 
-/Users/bencoding/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/android/native/include/Proxy.h:
+/Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/android/native/include/Proxy.h:
 
-/Users/bencoding/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/android/native/include/JavaObject.h:
+/Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/android/native/include/JavaObject.h:
 
-/Users/bencoding/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/android/native/include/EventEmitter.h:
+/Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/android/native/include/EventEmitter.h:
 
-/Users/bencoding/Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/android/native/include/NativeObject.h:
+/Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/android/native/include/NativeObject.h:
 
 jni/ti.mely.TimerProxy.h:
