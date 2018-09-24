@@ -2,8 +2,28 @@
 
 The Ti.mely project provides access to Android and iOS timers.
 
+
+
+# NB: This is a fork and a work in progress. 
+
+In order to provide parity to Javascript setTimeout and setInterval, thise methods have been included (for IOS only, so far... Android to follow! )
+
+
+
+__See the updated app.js for an example.__
+
+ 
+
+
+
+-------------
+
+
+
+
+
 <h2>Before you start</h2>
-* These are iOS and Android native modules designed to work with Titanium SDK 3.1.1.GA
+* These are iOS and Android native modules updated to work with Titanium SDK 7.3.1.GA
 * Before using this module you first need to install the package. If you need instructions on how to install a 3rd party module please read this installation guide.
 
 <h2>Download the compiled release</h2>
@@ -97,12 +117,12 @@ This event is called after the interval timer is fired.  The below shows how to 
 <pre><code>
 
 	var timer = require('ti.mely').createTimer();
-
+	
 	function showUpdate(d){
 		var msg = "interval changed - interval set to " + d.interval + " interval count = " + d.intervalCount;
 		Ti.API.info(msg);
 	}
-
+	
 	timer.addEventListener('onIntervalChange',showUpdate);
 	
 	timer.start({
