@@ -6,19 +6,15 @@ The Ti.mely project provides access to Android and iOS timers.
 
 # NB: This is a fork and a work in progress. 
 
-In order to provide parity to Javascript setTimeout and setInterval, these methods have been included (for IOS only, so far... Android to follow! )
+In order to provide parity to Javascript setTimeout and setInterval, these methods have been included for Android and iOS.
 
 The usage is very different to the original methods in this module in that it uses a callback as the first argument, just like setInterval and setTimeout, with the interval time as the second argument.
-
-You can also set a third argument to *true* to get debug logs. 
 
 
 
 __See the updated app.js for an example.__
 
  
-
-
 
 -------------
 
