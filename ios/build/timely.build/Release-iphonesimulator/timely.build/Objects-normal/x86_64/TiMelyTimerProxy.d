@@ -1,6 +1,7 @@
-dependencies: /Users/kosso/_GITHUB/ti.mely/ios/TiMely_Prefix.pch \
-  /Users/kosso/_GITHUB/ti.mely/ios/Classes/TiMelyTimerProxy.m \
-  /Users/kosso/_GITHUB/ti.mely/ios/Classes/TiMelyTimerProxy.h \
+dependencies: \
+  /Users/kosso/_SERVER/_GITLAB_AMAZING/instore/mobile-app-development/native-timer-module/ti.mely/ios/TiMely_Prefix.pch \
+  /Users/kosso/_SERVER/_GITLAB_AMAZING/instore/mobile-app-development/native-timer-module/ti.mely/ios/Classes/TiMelyTimerProxy.m \
+  /Users/kosso/_SERVER/_GITLAB_AMAZING/instore/mobile-app-development/native-timer-module/ti.mely/ios/Classes/TiMelyTimerProxy.h \
   /Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/iphone/include/TiProxy.h \
   /Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/iphone/include/KrollCallback.h \
   /Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/iphone/include/KrollContext.h \
@@ -21,7 +22,7 @@ dependencies: /Users/kosso/_GITHUB/ti.mely/ios/TiMely_Prefix.pch \
   /Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/iphone/include/defines.h \
   /Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/iphone/include/TiThreading.h \
   /Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/iphone/include/TiPublicAPI.h \
-  /Users/kosso/_GITHUB/ti.mely/ios/Classes/MSWeakTimer.h \
+  /Users/kosso/_SERVER/_GITLAB_AMAZING/instore/mobile-app-development/native-timer-module/ti.mely/ios/Classes/MSWeakTimer.h \
   /Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/iphone/include/TiUtils.h \
   /Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/iphone/include/TiDimension.h \
   /Library/Application\ Support/Titanium/mobilesdk/osx/7.3.1.GA/iphone/include/TiBuffer.h \
