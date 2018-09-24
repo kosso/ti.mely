@@ -48,6 +48,28 @@
 	[super shutdown:sender];
 }
 
+#pragma mark Listener Notifications
+
+-(void)_listenerAdded:(NSString *)type count:(int)count
+{
+    //    if (count == 1 && [type isEqualToString:@""])
+    //    {
+    //        // the first (of potentially many) listener is being added
+    //        // for event named 'my_event'
+    //    }
+}
+
+-(void)_listenerRemoved:(NSString *)type count:(int)count
+{
+    
+    //    if (count == 0 && [type isEqualToString:@"progress"])
+    //    {
+    //        // the last listener called for event named 'my_event' has
+    //        // been removed, we can optionally clean up any resources
+    //        // since no body is listening at this point for that event
+    //    }
+}
+
 #pragma mark Cleanup 
 
 
