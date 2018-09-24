@@ -1,57 +1,146 @@
+// Testing ti.mely 
 
-var timer =  require('ti.mely').createTimer();
-	
-// open a single window
-var win = Ti.UI.createWindow({
-	backgroundColor:'#fff'
+var tabGroup = Ti.UI.createTabGroup();
+
+Ti.App.addEventListener('memorywarning', function(e){
+  console.log('MEMORY WARNING:', e);
+  alert('Memory warning!');
 });
 
-var how2Label = Ti.UI.createLabel({
-	text:"Enter Duration in milliseconds",
-	top:20, left:7, right:7, height:20,color:"#000"
-});
-win.add(how2Label);
+tabGroup.addTab(createTab("ti.mely ", "ti.mely tests", "assets/images/tab1.png"));
 
-var durationText = Ti.UI.createTextField({
-	value:1000, top:50, left:7, right:7, height:40, color:"#000"	
-});
-win.add(durationText);
+tabGroup.open();
 
-var counterLabel = Ti.UI.createLabel({
-	top:100, width:Ti.UI.FILL, height:40,left:7, right:7,color:"#000"
-});
-win.add(counterLabel);
+function createTab(title, message, icon) {
+    var win = Ti.UI.createWindow({
+        title: title,
+        layout:'vertical',
+        backgroundColor: '#fff'
+    });
+    var label = Ti.UI.createLabel({
+        top: 20,
+        text: message,
+        color: '#333',
+        font: {
+            fontSize: 15
+        }
+    });
 
-function showUpdate(d){
-	var msg = "interval changed - interval set to " + d.interval + " interval count = " + d.intervalCount;
-	Ti.API.info(msg);
-	counterLabel.text = "Updated " + d.intervalCount  + " times.";
-};
+    win.add(label);
 
-var startButton = Ti.UI.createButton({
-	title:"Start", top:200, left:7, height:40, width:125
-});		
-win.add(startButton);
+    var idler = true;
+    var counter = 0;
+    var counter2 = 0;
+    var label_test = Ti.UI.createLabel({
+        text: counter,
+        top:20,
+        color: '#111',
+        font: {
+            fontSize: 20,
+            fontWeight: 'bold'
+        }
+    });
+    win.add(label_test);
 
-startButton.addEventListener('click',function(e){
-	counterLabel.text ="Starting Timer";
-	timer.addEventListener('onIntervalChange',showUpdate);
-	timer.start({
-		interval:durationText.value,
-		debug:true
-	});
-});
+    var label_test2 = Ti.UI.createLabel({
+        top: 20,
+        text: counter2,
+        color: '#111000',
+        font: {
+            fontSize: 20,
+            fontWeight: 'bold'
+        }
+    });
+    win.add(label_test2);
 
-var stopButton = Ti.UI.createButton({
-	title:"Stop", top:200,
-	right:7, height:40, width:125
-});		
-win.add(stopButton);
+    var timely = require('ti.mely');
 
-stopButton.addEventListener('click',function(e){
-	timer.stop();
-	timer.removeEventListener('onIntervalChange',showUpdate);
-	counterLabel.text ="Press the Start button to test again";
-});
 
-win.open();
+    var btn = Ti.UI.createButton({
+        top:20,
+        width:100,
+        title: 'start timeout'
+    });
+
+    var timeoutTimer;
+    btn.addEventListener('click', function(e){
+
+        timeoutTimer = timely.createTimer();
+        timeoutTimer.setTimeout(function(){
+            console.log('TIMEOUT DONE');
+            timeoutTimer = null;
+        }, 5000);
+
+    });
+
+    win.add(btn);
+
+    var btn2 = Ti.UI.createButton({
+        top:20,
+        width:100,
+        title: 'start interval'
+    });
+
+
+    var intervaltimer;
+    var intervaltimeout;
+    btn2.addEventListener('click', function(e){
+
+        counter = 0;
+        
+        intervaltimer = timely.createTimer();
+        intervaltimer.setInterval(function(){
+            counter++;
+            label_test.text = counter;
+            if(counter > 99999999999999){
+                counter = 0;
+            }
+            if(counter % 100 == 0){
+                intervaltimeout = timely.createTimer();
+                intervaltimeout.setTimeout(function(){
+                    counter2++;
+                    label_test2.text = counter2;
+                    console.log('DING! ', counter2, Date.now());
+                    intervaltimeout = null;
+                }, 1000);
+            }
+        }, 100);
+
+
+    });
+
+    win.add(btn2);
+
+    var btn3 = Ti.UI.createButton({
+        top:20,
+        width:100,
+        title: 'clear interval'
+    });
+
+    btn3.addEventListener('click', function(e){
+
+        console.log('stopping timers');
+        if(intervaltimer!==null){
+            intervaltimer.clearInterval();
+        }
+        if(intervaltimeout!==null){
+            intervaltimeout.clearTimeout();
+        }
+                
+        intervaltimer = null;
+        intervaltimeout = null;
+
+    });
+
+    win.add(btn3);
+
+
+    var tab = Ti.UI.createTab({
+        title: title,
+        icon: icon,
+        window: win
+    });
+
+    return tab;
+}
+
