@@ -20,37 +20,13 @@ __See the updated app.js for an example.__
 
 
 
+# Old methods.
 
 
-<h2>Before you start</h2>
-* These are iOS and Android native modules updated to work with Titanium SDK 7.3.1.GA
-* Before using this module you first need to install the package. If you need instructions on how to install a 3rd party module please read this installation guide.
 
-<h2>Download the compiled release</h2>
+// Old methods.  Please see the new app.js in the examples folder. 
 
-Download the platform you wish to use:
 
-* [iOS Dist](https://github.com/benbahrenburg/ti.mely/tree/master/iOS/dist)
-* [Android Dist] (https://github.com/benbahrenburg/ti.mely/tree/master/Android/dist)
-
-<h2>Building from source?</h2>
-
-If you are building from source you will need to do the following:
-
-Import the project into Xcode:
-
-* Modify the titanium.xcconfig file with the path to your Titanium installation
-
-Import the project into Eclipse:
-
-* Update the .classpath
-* Update the build properties
-
-<h2>Setup</h2>
-
-* Download the latest release from the releases folder ( or you can build it yourself )
-* Install the ti.mely module. If you need help here is a "How To" [guide](https://wiki.appcelerator.org/display/guides2/Using+a+Module). 
-* You can now use the module via the commonJS require method, example shown below.
 
 <h2>Importing the module using require</h2>
 <pre><code>
