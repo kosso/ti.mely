@@ -1,0 +1,27 @@
+-x
+objective-c
+-arch
+arm64
+-std=c99
+-fobjc-arc
+-fpascal-strings
+-Os
+-fno-common
+-DTI_VERSION=
+-DOBJC_OLD_DISPATCH_PROTOTYPES=0
+-isysroot
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk
+-miphoneos-version-min=8.0
+-g
+-fembed-bitcode-marker
+-iquote
+-iquote
+-I/Users/kosso/_GITHUB/ti.mely/ios/build/Release-iphoneos/include
+-I/Library/Application Support/Titanium/mobilesdk/osx/7.3.1.GA/iphone/include
+-I/Library/Application Support/Titanium/mobilesdk/osx/7.3.1.GA/iphone/include/TiCore
+-F/Users/kosso/_GITHUB/ti.mely/ios/build/Release-iphoneos
+-DTI_POST_1_2
+aarch64-apple-darwin17.7.0
+"4.2.1 Compatible Apple LLVM 9.1.0 (clang-902.0.39.2)"
+SDK_PRODUCT_BUILD_VERSION=15F79
+15F79
