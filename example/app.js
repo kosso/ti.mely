@@ -68,7 +68,7 @@ function createTab(title, message, icon) {
         timeoutTimer.setTimeout(function(){
             console.log('TIMEOUT DONE');
             timeoutTimer = null;
-        }, 5000, true);
+        }, 5000);
 
     });
 
